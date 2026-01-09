@@ -12,75 +12,81 @@
     <header class="site-header">
       <div class="logo">Cryptomics</div>
       <nav class="nav">
-        <a href="#problem">Problem</a>
-        <a href="#approach">Approach</a>
-        <a href="#contact">Contact</a>
+        <a href="#how-it-works">Solution</a>
+        <a href="#difference">Why Cryptomics</a>
+        <a href="#faq">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="mailto:jcroyle@berkeley.edu" class="nav-cta">Book a Call</a>
       </nav>
     </header>
 
     <main>
       <section class="hero" id="top">
-        <div class="hero-content">
-          <p class="eyebrow">GENOMICS × CRYPTOGRAPHY</p>
+        <div class="hero-content reveal">
+          <p class="eyebrow">GENOMICS & CRYPTOGRAPHY</p>
           <h1>Infrastructure for safely using genomic data at scale.</h1>
           <p class="hero-subtitle">
-            Cryptomics is building region-aware, policy-enforced key infrastructure so health systems, biotechs, and forensic labs can use genomic data
-            without overexposing irreversible personal information.
+            Cryptomics builds cryptography-first infrastructure so health systems, biobanks, and forensic teams can use genomic data without
+            overexposing irreversible personal information.
           </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="mailto:hello@cryptomics.net">Book a call</a>
+            <a class="btn secondary" href="#how-it-works">Learn how it works</a>
+          </div>
           <p class="hero-footnote">Early-stage. If you're working with genomic data and security, we'd love to talk.</p>
         </div>
       </section>
 
-      <section class="section" id="problem">
-        <div class="section-header">
-          <h2>The problem</h2>
+      <section class="section" id="how-it-works">
+        <div class="section-header reveal">
+          <h2>How Cryptomics works</h2>
           <p>
-            Genomic data powers precision medicine, drug discovery, risk prediction, consumer genomics, and forensics. At the same time, genomes are uniquely
-            identifying and effectively immutable once exposed, harm cannot be undone and re-identification risk only grows.
+            From static genomic files to living, policy-enforced genomes. Cryptomics turns monolithic formats into region-aware, auditable access paths
+            that stay aligned with consent and regulation.
           </p>
         </div>
-        <div class="grid two-cols">
-          <div class="card">
-            <h3>Locked away or overexposed</h3>
+        <div class="grid how-grid">
+          <div class="card step-card reveal">
+            <div class="step-label">01</div>
+            <h3>Ingest & map genomes</h3>
             <p>
-              Today, institutions face a false choice. Genomic data is either locked down, slowing research and clinical progress, or broadly shared,
-              creating high risk of re-identification, discrimination, and misuse.
+              Ingest VCF/BAM and clinical context, then map them into genes, panels, and regions so that risk-critical loci can be addressed precisely.
             </p>
           </div>
-          <div class="card">
-            <h3>Monolithic files, blunt access</h3>
+          <div class="card step-card">
+            <div class="step-label">02</div>
+            <h3>Encrypt by region</h3>
             <p>
-              Existing security models treat genomes as monolithic files (VCF, BAM, FASTA) with all-or-nothing access. They ignore region-level risk
-              (e.g., BRCA1 vs. neutral regions) and lack role-, purpose-, and time-bounded controls.
+              Apply region-aware cryptography with per-gene and per-panel keys so irreversible identifiers are never broadly exposed.
             </p>
           </div>
-          <div class="card">
-            <h3>Policy on paper, not in code</h3>
+          <div class="card step-card">
+            <div class="step-label">03</div>
+            <h3>Enforce policy in code</h3>
             <p>
-              HIPAA, GDPR, IRB, and consent forms live on paper or in PDFs. Enforcement is manual and after the fact, rather than encoded directly
-              into how keys are issued and data is accessed.
+              Encode consent, IRB, and regulatory rules into machine-enforceable policies that gate key issuance and access workflows.
             </p>
           </div>
-          <div class="card">
-            <h3>Security that users work around</h3>
+          <div class="card step-card">
+            <div class="step-label">04</div>
+            <h3>Audit every locus</h3>
             <p>
-              Crypto, key management, and file formats are invisible, brittle, or bolted on. Analysts, clinicians, and investigators work around
-              security controls to get their job done, eroding trust for participants and regulators.
+              Capture region-level audit trails of who accessed which locus, when, and for what purposegrounding trust for regulators and participants.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section" id="approach">
-        <div class="section-header">
-          <h2>Our approach</h2>
+      <section class="section" id="difference">
+        <div class="section-header reveal">
+          <h2>The Cryptomics difference</h2>
           <p>
             Cryptomics combines modern cryptography, fine-grained data architecture, and machine-enforceable policy to make region-level access control
             feel like a normal analysis workflow.
           </p>
         </div>
         <div class="grid three-cols">
-          <div class="card highlight">
+          <div class="card highlight reveal">
             <h3>Region-aware cryptography</h3>
             <ul>
               <li>Per-gene / per-interval keys (e.g., BRCA1, APOE, panels) instead of whole-file secrets.</li>
@@ -107,14 +113,106 @@
         </div>
       </section>
 
+      <section class="section" id="who">
+        <div class="section-header reveal">
+          <h2>Who we support</h2>
+          <p>
+            Cryptomics is built for organizations who need to unlock genomic signal without losing control of irreversible identifiers.
+          </p>
+        </div>
+        <div class="grid two-cols">
+          <div class="card reveal">
+            <h3>Health systems & biobanks</h3>
+            <p>
+              Enable precision medicine, risk prediction, and longitudinal research while keeping individual genomes governed by consent and policy.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Biotechs & pharma</h3>
+            <p>
+              Power discovery pipelines with secure, auditable genomic access that scales across studies, partners, and jurisdictions.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Forensic & public safety</h3>
+            <p>
+              Apply genomic investigation under tight, region-level controls and transparent audit trails that stand up to scrutiny.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Privacy-first data custodians</h3>
+            <p>
+              Offer genomic data access as a governed service with cryptography and policy wired into every query and export.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="section-header reveal">
+          <h2>Questions & answers</h2>
+          <p>Learn more about how Cryptomics fits into secure genomic workflows.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question" type="button">
+              <span>Does Cryptomics replace existing genomic pipelines?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Cryptomics is designed to wrap and augment existing tools and file formats, not replace them. It adds region-aware encryption, policy
+                enforcement, and audit around the workflows you already run.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Where does genomic data live?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Deployment models are flexible. The goal is that your genomes remain under your control, while Cryptomics manages keys, policies, and
+                access enforcement at the region level.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>How does this help with compliance?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                By encoding consent, IRB constraints, and regulatory requirements directly into policy and key issuance, Cryptomics helps you show
+                that genomic access is constrained, auditable, and aligned with governance.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Is this meant for small or large organizations?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Cryptomics is focused on institutions stewarding sensitive genomic cohortsfrom focused research groups to large health systems
+                and national biobanks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section section-alt" id="contact">
-        <div class="cta">
+        <div class="cta reveal">
           <h2>Working on secure genomics?</h2>
           <p>
             We're speaking with health systems, biobanks, biotechs, and forensic teams who need to safely unlock genomic data. If this is you,
             let's talk.
           </p>
-          <a class="btn primary" href="https://www.linkedin.com/company/cryptomics/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+          <a class="btn primary" href="mailto:hello@cryptomics.net">Email Cryptomics</a>
         </div>
       </section>
     </main>
@@ -126,10 +224,132 @@
   </div>
 
   <script>
+    // Footer year
     const yearEl = document.getElementById('year');
     if (yearEl) {
       yearEl.textContent = new Date().getFullYear();
     }
+
+    // FAQ accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach((item) => {
+      const button = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+      const icon = item.querySelector('.faq-icon');
+
+      if (!button || !answer || !icon) return;
+
+      button.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        faqItems.forEach((other) => {
+          other.classList.remove('open');
+          const otherAnswer = other.querySelector('.faq-answer');
+          const otherIcon = other.querySelector('.faq-icon');
+          if (otherAnswer && otherIcon) {
+            otherAnswer.style.maxHeight = null;
+            otherIcon.textContent = '+';
+          }
+        });
+
+        if (!isOpen) {
+          item.classList.add('open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          icon.textContent = '–';
+        }
+      });
+    });
+
+    // Scroll-based header styling & active nav links
+    const headerEl = document.querySelector('.site-header');
+    const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+    const sections = Array.from(document.querySelectorAll('main section[id]'));
+
+    const setActiveNav = () => {
+      const scrollPos = window.scrollY;
+      const offset = headerEl ? headerEl.offsetHeight + 24 : 80;
+
+      let currentId = '';
+      for (const section of sections) {
+        const top = section.offsetTop - offset - 40;
+        if (scrollPos >= top) {
+          currentId = section.id;
+        }
+      }
+
+      navLinks.forEach((link) => {
+        const href = link.getAttribute('href') || '';
+        const targetId = href.startsWith('#') ? href.slice(1) : null;
+        if (targetId && targetId === currentId) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    };
+
+    const setHeaderScrolled = () => {
+      if (!headerEl) return;
+      if (window.scrollY > 10) {
+        headerEl.classList.add('scrolled');
+      } else {
+        headerEl.classList.remove('scrolled');
+      }
+    };
+
+    window.addEventListener('scroll', () => {
+      setHeaderScrolled();
+      setActiveNav();
+    });
+
+    // Smooth scroll with header offset for in-page nav links
+    navLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const href = link.getAttribute('href') || '';
+        if (!href.startsWith('#')) return;
+
+        const targetId = href.slice(1);
+        const target = document.getElementById(targetId);
+        if (!target) return;
+
+        event.preventDefault();
+        const headerOffset = headerEl ? headerEl.offsetHeight + 12 : 72;
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth',
+        });
+      });
+    });
+
+    // Scroll reveal using IntersectionObserver
+    const revealElements = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window && revealElements.length) {
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('reveal-visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.2,
+        }
+      );
+
+      revealElements.forEach((el) => {
+        revealObserver.observe(el);
+      });
+    } else {
+      // Fallback: show all immediately
+      revealElements.forEach((el) => el.classList.add('reveal-visible'));
+    }
+
+    // Initialize state on load
+    setHeaderScrolled();
+    setActiveNav();
   </script>
 </body>
 </html>
