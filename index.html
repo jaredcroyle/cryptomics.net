@@ -12,7 +12,9 @@
   <div class="page">
     <header class="site-header">
       <div class="logo">
-        <img src="transparent_cryptomics.png" alt="Cryptomics" />
+        <a href="index.html">
+          <img src="transparent_cryptomics.png" alt="Cryptomics" />
+        </a>
       </div>
       <nav class="nav">
         <a href="#how-it-works">Solution</a>
@@ -25,7 +27,7 @@
     <main>
       <section class="hero" id="top">
         <div class="hero-content reveal">
-          <p class="eyebrow">GENOMICS & CRYPTOGRAPHY</p>
+          <p class="eyebrow">GENOMICS &amp; CRYPTOGRAPHY</p>
           <h1>Infrastructure for safely using genomic data at scale.</h1>
           <div class="hero-actions">
             <a class="btn primary" href="mailto:jcroyle@berkeley.edu">Book a call</a>
@@ -34,9 +36,30 @@
         </div>
       </section>
 
+      <section class="section section-metrics" id="why-now">
+        <div class="section-header reveal">
+          <p class="section-label">WHY NOW</p>
+          <h2>Genomic data is scaling faster than governance.</h2>
+        </div>
+        <div class="metrics-grid">
+          <div class="metric-card reveal">
+            <div class="metric-number">10x</div>
+            <p class="metric-caption">Projected growth in clinical genomic data volumes this decade.</p>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-number">&gt;80%</div>
+            <p class="metric-caption">Of organizations cite data security as a top barrier to genomic use.</p>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-number">1</div>
+            <p class="metric-caption">Genome can expose a lifetime of risk if not governed at the region level.</p>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="how-it-works">
         <div class="section-header reveal">
-          <h2>How Cryptomics works</h2>
+          <p class="section-label">SOLUTION</p>
         </div>
         <div class="grid how-grid">
           <div class="card step-card reveal">
@@ -46,21 +69,21 @@
               Ingest VCF/BAM and clinical context, then map them into genes, panels, and regions so that risk-critical loci can be addressed precisely.
             </p>
           </div>
-          <div class="card step-card">
+          <div class="card step-card reveal">
             <div class="step-label">02</div>
             <h3>Encrypt by region</h3>
             <p>
               Apply region-aware cryptography with per-gene and per-panel keys so irreversible identifiers are never broadly exposed.
             </p>
           </div>
-          <div class="card step-card">
+          <div class="card step-card reveal">
             <div class="step-label">03</div>
             <h3>Enforce policy in code</h3>
             <p>
               Encode consent, IRB, and regulatory rules into machine-enforceable policies that gate key issuance and access workflows.
             </p>
           </div>
-          <div class="card step-card">
+          <div class="card step-card reveal">
             <div class="step-label">04</div>
             <h3>Audit every locus</h3>
             <p>
@@ -72,10 +95,10 @@
 
       <section class="section" id="difference">
         <div class="section-header reveal">
-          <h2>The Cryptomics difference</h2>
+          <p class="section-label">WHY CRYPTOMICS</p>
         </div>
-        <div class="grid three-cols">
-          <div class="card highlight reveal">
+        <div class="grid three-cols difference-grid">
+          <div class="card highlight feature-card reveal">
             <h3>Region-aware cryptography</h3>
             <ul>
               <li>Per-gene / per-interval keys (e.g., BRCA1, APOE, panels) instead of whole-file secrets.</li>
@@ -83,7 +106,7 @@
               <li>Protocols where computations run on encrypted genomes; raw data is rarely decrypted.</li>
             </ul>
           </div>
-          <div class="card highlight">
+          <div class="card highlight reveal">
             <h3>Fine-grained data architecture</h3>
             <ul>
               <li>Refactor genomes from monolithic VCF/BAM into addressable units: genes, regions, panels.</li>
@@ -91,7 +114,7 @@
               <li>Designed for clinical pipelines, research workflows, and forensic queries.</li>
             </ul>
           </div>
-          <div class="card highlight">
+          <div class="card highlight reveal">
             <h3>Policy-aligned by default</h3>
             <ul>
               <li>Translate consent, IRB, and regulatory requirements into machine-enforceable policies.</li>
@@ -104,7 +127,7 @@
 
       <section class="section" id="who">
         <div class="section-header reveal">
-          <h2>Who we support</h2>
+          <p class="section-label">WHO WE SERVE</p>
         </div>
         <div class="grid two-cols">
           <div class="card reveal">
@@ -113,19 +136,19 @@
               Enable precision medicine, risk prediction, and longitudinal research while keeping individual genomes governed by consent and policy.
             </p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <h3>Biotechs & pharma</h3>
             <p>
               Power discovery pipelines with secure, auditable genomic access that scales across studies, partners, and jurisdictions.
             </p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <h3>Forensic & public safety</h3>
             <p>
               Apply genomic investigation under tight, region-level controls and transparent audit trails that stand up to scrutiny.
             </p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <h3>Privacy-first data custodians</h3>
             <p>
               Offer genomic data access as a governed service with cryptography and policy wired into every query and export.
@@ -136,7 +159,8 @@
 
       <section class="section" id="faq">
         <div class="section-header reveal">
-          <h2>Questions & answers</h2>
+          <p class="section-label">FAQ</p>
+          <h2>Don't see your answers? Contact us below.</h2>
         </div>
         <div class="faq-list">
           <div class="faq-item reveal">
@@ -151,7 +175,7 @@
               </p>
             </div>
           </div>
-          <div class="faq-item">
+          <div class="faq-item reveal">
             <button class="faq-question" type="button">
               <span>Where does genomic data live?</span>
               <span class="faq-icon">+</span>
